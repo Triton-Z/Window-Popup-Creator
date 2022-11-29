@@ -1,5 +1,5 @@
+const input = document.getElementById("txt");
 document.addEventListener("keyup", function(event) {
-    const input = document.getElementById("txt");
     if (event.keyCode === 13) 
     {
         if (input.value.substring(0, 7) === "https://" || input.value.substring(0, 6) === "http://") 
@@ -11,3 +11,10 @@ document.addEventListener("keyup", function(event) {
         }
     }
 });
+
+input.addEventListener('input', resizeInput);
+resizeInput.call(input);
+function resizeInput() 
+{
+  this.style.width = this.value.length + "ch";
+}
