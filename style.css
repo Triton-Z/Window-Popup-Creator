@@ -6,5 +6,9 @@ input
     transform: translate(-50%, -50%);
     border: 2px solid black;
     width: 40%;
-    height: 3%;  
+    height: 3%;
+    font-size: 115%;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
 }
