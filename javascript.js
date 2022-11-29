@@ -16,5 +16,5 @@ input.addEventListener('input', resizeInput);
 resizeInput.call(input);
 function resizeInput() 
 {
-  this.style.width = this.value.length + "ch";
+  this.style.width = this.value.length + 20 + "ch";
 }
