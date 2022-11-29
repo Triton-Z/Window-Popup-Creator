@@ -7,7 +7,7 @@ document.addEventListener("keyup", function(event) {
             window.open(input.value,'window','width=600,height=300');
         } else
         {
-            window.open("https://" + input.value,'window','width=600,height=300');   
+            window.open(`https://${input.value}`,'window','width=600,height=300');   
         }
     }
 });
