@@ -1,6 +1,6 @@
 const input = document.getElementById("txt");
 document.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) 
+    if (event.key === "Enter") 
     {
         if (input.value.substring(0, 7) === "https://" || input.value.substring(0, 6) === "http://") 
         {
@@ -16,5 +16,5 @@ input.addEventListener('input', resizeInput);
 resizeInput.call(input);
 function resizeInput() 
 {
-  this.style.width = this.value.length + 20 + "ch";
+  this.style.width = this.value.length + 2 + "ch";
 }
